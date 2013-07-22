@@ -1,0 +1,50 @@
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
+
+.tcb-audio-player-base {
+    background-color: #ededed;
+    border-radius: 4px;
+}
+
+.tcb-audio-player-artwork {
+    background-color: #969595;
+    border-radius: 4px; 
+}
+
+.tcb-audio-rewind-button {
+    background: sc_static('images/rewind_button.png');
+    background-repeat: no-repeat;
+}
+
+.tcb-audio-forward-button {
+    background: sc_static('images/forward_button.png');
+    background-repeat: no-repeat;
+}
+
+.tcb-audio-play-button {
+    background: sc_static('images/play_button.png');
+    background-repeat: no-repeat;
+}
+
+.tcb-audio-pause-button {
+    background: sc_static('images/pause_button.png');
+    background-repeat: no-repeat;
+}
+
+.tcb-audio-tracklisting-button {
+    background: sc_static('images/tracklisting_button.png');
+    background-repeat: no-repeat;
+}
+
+.sc-label-view.sc-regular-size.tcb-audio-player-artist-name {
+    font-size: 16px;
+}
+
+.sc-label-view.sc-regular-size.tcb-audio-player-artist-track-title {
+    font-size: 12px;
+    color: #969595;
+}

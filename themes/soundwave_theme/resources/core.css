@@ -1,0 +1,54 @@
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
+
+/* core-button */
+.core-button {
+    border-radius: 4px;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: #e6e6e6;
+    color: #a0a0a0;
+    -webkit-font-smoothing: antialiased;
+} 
+
+.core-empty-button {
+    background-color: transparent;
+    border: none;
+}
+
+/* core-input */ 
+.core-input::-webkit-input-placeholder {
+    color:  rgba(177, 177, 177, 0.65);
+}
+
+.core-input:-moz-placeholder {
+    color: rgba(177, 177, 177, 0.65);
+}
+
+.core-input:-ms-input-placeholder {
+    color: rgba(177, 177, 177, 0.65);
+}
+
+.sc-text-field-view.focus{
+    outline: none !important;
+}
+
+.sc-text-field-view.core-input {
+    background: none;
+    background-color: rgba(219, 219, 219, 0.25);
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.58);
+    border-radius: 6px;
+    -moz-box-shadow: inset 0 1 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 1 0px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.core-thicker-text {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}

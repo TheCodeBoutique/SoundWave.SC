@@ -1,0 +1,10 @@
+.topbar {
+    background: rgb(210,208,208); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(210,208,208,1) 0%, rgba(189,188,188,1) 95%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(210,208,208,1)), color-stop(95%,rgba(189,188,188,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(210,208,208,1) 0%,rgba(189,188,188,1) 95%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(210,208,208,1) 0%,rgba(189,188,188,1) 95%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(210,208,208,1) 0%,rgba(189,188,188,1) 95%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(210,208,208,1) 0%,rgba(189,188,188,1) 95%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d0d0', endColorstr='#bdbcbc',GradientType=0 ); /* IE6-9 */
+}

@@ -1,0 +1,42 @@
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
+.sc-label-view.soundwave-text-login {
+    font-size: 72px;
+    color: #969595;
+    margin-bottom: 8px;
+    float: right; 
+}
+
+.soundwave-icon-login {
+    margin-top: 22px;
+    height: 50px;
+    width: 270px;
+    float: left;
+}
+
+.soundwave-user-input-login {
+    height: 25px;
+    width: 180px;
+    margin-left: 275px;
+    margin-top: 1px;
+    float: left;
+}
+
+.soundwave-password-input-login {
+    height: 25px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 1px;
+    float: left;
+}
+
+.soundwave-submit-button-login {
+    height: 25px;
+    width: 100px;
+    margin-left: 10px;
+    float: right;
+}

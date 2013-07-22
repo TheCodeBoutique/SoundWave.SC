@@ -1,0 +1,21 @@
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
+body {
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: #ededed;
+}
+
+:focus {
+    box-shadow: 0px 0px 2pt 2pt rgba(210, 246, 253, 1);
+    border-radius: 4px;
+}
+
+.bar {
+  background-color: rgba(210, 246, 253, 1);
+}

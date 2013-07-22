@@ -1,0 +1,14 @@
+.safari .sc-text-field-view .border {
+    -webkit-appearance: none !important; 
+    outline-offset: 0px !important;
+}
+ 
+.webkit .sc-text-field-view .border {
+    -webkit-appearance: none !important; 
+    outline-offset: 0px !important;
+}
+
+.sc-text-field-view.focus {
+    -webkit-appearance: none !important; 
+    outline-offset: 0px !important;
+}
