@@ -12,3 +12,7 @@
     -webkit-appearance: none !important; 
     outline-offset: 0px !important;
 }
+
+.sc-button-label {
+  cursor:pointer;
+}

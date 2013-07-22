@@ -18,26 +18,31 @@
 .tcb-audio-rewind-button {
     background: sc_static('images/rewind_button.png');
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 .tcb-audio-forward-button {
     background: sc_static('images/forward_button.png');
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 .tcb-audio-play-button {
     background: sc_static('images/play_button.png');
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 .tcb-audio-pause-button {
     background: sc_static('images/pause_button.png');
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 .tcb-audio-tracklisting-button {
     background: sc_static('images/tracklisting_button.png');
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 .sc-label-view.sc-regular-size.tcb-audio-player-artist-name {
