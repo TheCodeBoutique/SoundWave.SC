@@ -8,4 +8,4 @@ Getting Started
     cd SoundWave.SC
     sc-server --whitelist=whitelist.json 
 
-Your application will run at the following url: http://localhost:4020/soundwave.
+Your application will run at the following url: http://localhost:4020/soundwave
