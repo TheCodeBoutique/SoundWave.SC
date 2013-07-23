@@ -1,0 +1,4 @@
+.tcb-verticalScroll {
+  overflow-y: scroll;
+  z-index: 20;
+}
