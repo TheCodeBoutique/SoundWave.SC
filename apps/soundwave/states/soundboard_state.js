@@ -6,9 +6,37 @@
 
 Soundwave.SoundboardState = SC.State.extend ({
   
+  isFirstTime: YES,
+  
   enterState: function() {
     TCB.Color.colorLog('Enter Soundboard State', TCB.Color.Ok);
-    Soundwave.applicationController.set('mainContainer', Soundwave.soundboardView.interfaceView)
+    Soundwave.applicationController.set('mainContainer', Soundwave.soundboardView.interfaceView);
+    if(this.isFirstTime) this.get('statechart').invokeStateMethod('_loadAlbums');
+  },
+  
+  _loadAlbums: function() {
+    TCB.Color.colorLog('Is first time', TCB.Color.Warn);
+    this.set('isFirstTime', NO);
+    
+    var query = SC.Query.local(Soundwave.Album),
+        data = Soundwave.store.find(query);
+        
+    
+    data.addObserver('status', this, function observer() {
+      if (data.get('status') === SC.Record.READY_CLEAN) {
+        data.removeObserver('status', this, observer);
+        Soundwave.soundboardController.set('content', data);
+        this.get('statechart').invokeStateMethod('_dataLoaded');
+      }
+      // might want to check error states too
+    });
+    
+    // in case our data was already loaded (ie synchronous)
+    data.notifyPropertyChange('status');
+  },
+  
+  _dataLoaded: function() {
+    TCB.Color.colorLog('Data loaded into soundboardController', TCB.Color.Ok);
   },
   
   rewindSong: function() {
