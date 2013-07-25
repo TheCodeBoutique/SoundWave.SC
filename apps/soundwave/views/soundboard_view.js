@@ -39,6 +39,10 @@ Soundwave.soundboardView = SC.Page.design ({
             contentBinding: 'Soundwave.soundboardController.arrangedObjects',
           
             exampleView: SC.View.extend(SC.Control, {
+              
+              transitionIn: SC.View.FADE,
+              transitionInOptions: { delay: 0.3 },
+              
               classNames: ['grid-example-view'],
               childViews: ['albumArtwork', 'albumTitleView', 'artistNameView'],
               albumArtwork: SC.ImageView.extend({
@@ -68,7 +72,7 @@ Soundwave.soundboardView = SC.Page.design ({
       }),
       
       soundwaveLogoView: SC.View.design ({
-          layout: { centerX: 0, centerY: -35, height: 140, width: 730 },
+          layout: { centerX: 0, centerY: 0, height: 140, width: 730 },
           childViews: ["soundwaveIcon", "soundwaveText"],
           
           soundwaveIcon: SC.ImageView.design ({
