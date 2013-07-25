@@ -35,9 +35,27 @@
 }
 
 .soundwave-submit-button-login {
-    height: 25px;
+    height: 27px;
     width: 100px;
     margin-left: 10px;
     float: right;
     cursor:pointer;
+}
+
+.soundwave-signup-view-login {
+    float: right;
+    margin-top: 15px;
+    margin-left: 470px;
+}
+
+.soundwave-signup-text-login {
+    color: #969595;
+    float: left;
+}
+
+.soundwave-register-button-login {
+    float: right;
+    margin-left: 10px;
+    color: #969595;
+    font-size: 12px;
 }

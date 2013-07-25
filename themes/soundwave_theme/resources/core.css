@@ -11,9 +11,8 @@
     background-color: white;
     border: solid;
     border-width: 1px;
-    border-color: #e6e6e6;
-    color: #a0a0a0;
-    -webkit-font-smoothing: antialiased;
+    border-color: #cfcfcf;
+    color: #000000;
 } 
 
 .core-empty-button {
@@ -40,13 +39,13 @@
 
 .sc-text-field-view.core-input {
     background: none;
-    background-color: rgba(219, 219, 219, 0.25);
+    background-color: #dbdbdb;
     border: 1px solid;
     border-color: rgba(255, 255, 255, 0.58);
     border-radius: 6px;
-    -moz-box-shadow: inset 0 1 0px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: inset 0 1 0px rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 1 1px rgba(0, 0, 0, 0.10), 0px 0px 8px 2px rgba(255, 255, 255, .25);
+    -webkit-box-shadow: inset 0 1 1px rgba(0, 0, 0, 0.10), 0px 0px 8px 2px rgba(255, 255, 255, .25);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.10), 0px 0px 8px 2px rgba(255, 255, 255, .25);
 }
 
 .core-thicker-text {

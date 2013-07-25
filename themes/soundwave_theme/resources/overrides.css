@@ -16,3 +16,16 @@
 .sc-button-label {
   cursor:pointer;
 }
+
+.sc-text-field-view input {
+  left: -2px;
+  width: 102%;
+  padding-left: 3px;
+  font-size: 12px;
+  color: #474747;
+}
+
+.sc-text-field-view .hint {
+  color: #474747;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
