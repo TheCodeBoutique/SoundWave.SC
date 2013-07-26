@@ -37,7 +37,7 @@ Soundwave.LoginState = SC.State.extend ({
               var banks = response ;
               console.log(banks);
             console.log('Good to see you, ' + response.name + '.');
-            console.log("Your email is, " + response.picture + '.');
+            console.log("Your email is, " + response.email + '.');
             console.log("Your are from the city of , " + response.location.name  + '.');
           });
         } else {
