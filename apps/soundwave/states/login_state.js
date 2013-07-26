@@ -47,6 +47,8 @@ Soundwave.LoginState = SC.State.extend ({
   },
 
   exitState: function() {
+      Soundwave.loginController.set('userName', ""); 
+      Soundwave.loginController.set('userPassword', "");
       Soundwave.applicationController.set('mainContainer', null)
   }
 
