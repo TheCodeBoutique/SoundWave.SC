@@ -1,0 +1,29 @@
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
+.soundwave-signup-view-login {
+    float: right;
+    margin-top: 15px;
+}
+
+.soundwave-signup-text-login {
+    color: #969595;
+    float: left;
+}
+
+.soundwave-register-button-login {
+    float: left;
+}
+
+.soundwave-facebook-text-login {
+    float: left;
+    margin-left: 5px;
+}
+
+.soundwave-facebook-button-login {
+    float: right;
+    margin-left: 5px;
+}
