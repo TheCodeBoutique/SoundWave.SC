@@ -1,0 +1,14 @@
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
+.core-light-text {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+.core-helvetica-text {
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
