@@ -14,13 +14,13 @@ TCB.AudioPlayer = SC.View.extend ({
     }),
    
     artistName: SC.LabelView.design({
-      classNames: ['tcb-audio-player-artist-name', 'core-thicker-text'],
+      classNames: ['tcb-audio-player-artist-name', 'core-light-text'],
       layout: { top: 2, left: 55, height: 20, width: 240 },
       value: 'Muse'
     }),
    
     artistTrackTitle: SC.LabelView.design({
-      classNames: ['tcb-audio-player-artist-track-title', 'core-thicker-text'],
+      classNames: ['tcb-audio-player-artist-track-title', 'core-light-text'],
       layout: { top: 20, left: 55, height: 20, width: 240 },
       value: 'The 2nd Law - Animals'
     }),
