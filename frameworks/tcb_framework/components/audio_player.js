@@ -1,3 +1,4 @@
+sc_require('delegates/tcb_delegate');
 // ==========================================================================
 // Project:   TCB - AudioPlayer
 // Copyright: @2013 The Code Boutique, LLC
@@ -29,7 +30,7 @@ TCB.AudioPlayer = SC.View.extend ({
       layout: { top: 5, left: 295, height: 27, width: 125 },
       childViews: ['rewindButton', 'controlButtons', 'forwardButton'],
    
-      rewindButton: SC.ButtonView.design({
+      rewindButton: SC.ButtonView.design(TCB.ReturnKeyDelegate, {
         classNames: ['tcb-audio-rewind-button', 'core-empty-button'],
         tagName: "button",
         layout: { centerY: 0, left: 2, height: 13, width: 27 },
@@ -41,7 +42,7 @@ TCB.AudioPlayer = SC.View.extend ({
         layout: { centerX: 0, centerY: 0, height: 25, width: 25 },
         childViews: ['playButton', 'pauseButton'],
    
-        playButton: SC.ButtonView.design({
+        playButton: SC.ButtonView.design(TCB.ReturnKeyDelegate, {
           tagName: "button",
           classNames: ['tcb-audio-play-button', 'core-empty-button'],
           layout: { centerY: 0, centerX: 0, height: 16, width: 15 },
@@ -50,7 +51,7 @@ TCB.AudioPlayer = SC.View.extend ({
           target: 'Soundwave.statechart'
         }),
    
-        pauseButton: SC.ButtonView.design({
+        pauseButton: SC.ButtonView.design(TCB.ReturnKeyDelegate, {
           tagName: "button",
           classNames: ['tcb-audio-pause-button', 'core-empty-button'],
           layout: { centerY: 0, centerX: 0, height: 16, width: 15 },
@@ -61,7 +62,7 @@ TCB.AudioPlayer = SC.View.extend ({
    
       }),
    
-      forwardButton: SC.ButtonView.design({
+      forwardButton: SC.ButtonView.design(TCB.ReturnKeyDelegate, {
         tagName: "button",
         classNames: ['tcb-audio-forward-button', 'core-empty-button'],
         layout: { centerY: 0, right: 2, height: 13, width: 27 },
@@ -71,7 +72,7 @@ TCB.AudioPlayer = SC.View.extend ({
    
     }),
 
-    tracklistingButton: SC.ButtonView.design({
+    tracklistingButton: SC.ButtonView.design(TCB.ReturnKeyDelegate, {
       tagName: "button",
       classNames: ['tcb-audio-tracklisting-button', 'core-empty-button'],
       layout: { top: 10, right: 10, height: 20, width: 20 },

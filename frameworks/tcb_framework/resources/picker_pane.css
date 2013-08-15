@@ -1,9 +1,9 @@
 .tcb-picker-pane {
   background: sc_static('images/picker_pane.png');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  z-index: 100;
 }
 
 .sc-pane.sc-panel > .sc-view.tcb-picker-pane-contentview {
-  background-color: lightgreen;
   border-radius: 10px;
 }
