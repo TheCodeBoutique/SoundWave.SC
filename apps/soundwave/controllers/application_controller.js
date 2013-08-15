@@ -10,9 +10,10 @@
 
   @extends SC.Object
 */
-Soundwave.applicationController = SC.Object.create(
+Soundwave.applicationController = SC.Object.create( 
 /** @scope Soundwave.applicationController.prototype */ {
 
-  mainContainer: null
+	baseView: null,
+	mainContainer: null,
 
 });

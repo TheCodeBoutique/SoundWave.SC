@@ -9,6 +9,7 @@ Soundwave.ApplicationState = SC.State.extend ({
   
   enterState: function() {
     Soundwave.getPath('mainPage.mainPane').append();
+		Soundwave.applicationController.set('baseView', Soundwave.getPath('mainPage.mainPane'));
   },
   
   mapStateToURL: function(route) {
@@ -28,6 +29,7 @@ Soundwave.ApplicationState = SC.State.extend ({
   
   parseURLState: SC.State.plugin('Soundwave.ParseURLState'),
   loginState: SC.State.plugin('Soundwave.LoginState'),
+	signupState: SC.State.plugin('Soundwave.SignupState'),
   soundboardState: SC.State.plugin('Soundwave.SoundboardState')
 
 });
