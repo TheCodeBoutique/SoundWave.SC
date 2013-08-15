@@ -17,5 +17,9 @@ body {
 }
 
 .bar {
-  background-color: rgba(210, 246, 253, 1);
+  	background-color: rgba(210, 246, 253, 1);
+}
+
+.modalBase {
+    background-color: rgba(0, 0, 0, 0.4);   
 }

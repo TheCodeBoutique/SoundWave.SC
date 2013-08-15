@@ -9,15 +9,15 @@ Soundwave.loginView = SC.Page.design ({
     childViews: ["interfaceView"],
     
     interfaceView: SC.View.design({
-      transitionIn: SC.View.SCALE,
-      transitionInOptions: { delay: 0.0 },
+      transitionIn: SC.View.FADE,
+      transitionInOptions: { delay: 0.3 },
       transitionOut: SC.View.FADE,
       transitionOutOptions: { delay: 0.0, duration: 1.0 },
       layout: { top: 0, right: 0, bottom: 0, left: 0 },
       childViews: ['loginView', 'registerView', 'fbSetupView'],
       
       loginView: SC.View.design (TCB.FB, {
-          layout: { centerX: 0, centerY: -120, height: 145, width: 730 },
+          layout: { centerX: 0, centerY: -50, height: 145, width: 730 },
           childViews: ["soundwaveIcon", "soundwaveText", "userNameInput", "passwordInput", "submitButton"],
 
           soundwaveIcon: SC.ImageView.design ({
@@ -47,14 +47,14 @@ Soundwave.loginView = SC.Page.design ({
               valueBinding: "Soundwave.loginController.userPassword"
           }),
 
-          submitButton: SC.ButtonView.design ({
+          submitButton: SC.ButtonView.design (TCB.ReturnKeyDelegate, {
               classNames: ['core-button', 'core-blue-button', 'sw-login-submit-button'],
               useStaticLayout: YES,
               tagName: "button", 
               title: 'Submit',
               action: 'validateUserInput',
               target: 'Soundwave.statechart',
-              isDefault: YES
+              isDefault: NO
           }),
 
           registerView: SC.View.design({
@@ -81,7 +81,7 @@ Soundwave.loginView = SC.Page.design ({
                 value: sc_static('/images/iOS_icon.png')
             }),
             
-            facebookButton: SC.ButtonView.design ({
+            facebookButton: SC.ButtonView.design (TCB.ReturnKeyDelegate, {
                 classNames: ['core-button', 'core-gray-button', 'sw-login-facebook-button'],
                 useStaticLayout: YES,
                 tagName: "button",
@@ -90,12 +90,12 @@ Soundwave.loginView = SC.Page.design ({
                 target: 'Soundwave.statechart'
             }),
             
-            registerButton: SC.ButtonView.design ({
+            registerButton: SC.ButtonView.design (TCB.ReturnKeyDelegate, {
                 classNames: ['core-button', 'core-white-button', 'sw-login-registration-button'],
                 useStaticLayout: YES,
                 tagName: "button",
                 title: 'Sign Up',
-                action: 'doShowRegistration',
+                action: '_transitionToSignupState',
                 target: 'Soundwave.statechart'
             }),
             
