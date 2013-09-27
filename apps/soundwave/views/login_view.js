@@ -63,7 +63,7 @@ Soundwave.loginView = SC.Page.design ({
         
         registerView: SC.View.design (TCB.Hover, {
             classNames: ['sw-login-register-view'],
-            layout: { centerX: 0, centerY: 100, height: 82, width: 580 },
+            layout: { centerX: 0, centerY: 150, height: 82, width: 580 },
             childViews: ['iOSIconView', 'registrationTextView', 'facebookButton', 'registerButton'],
             
                 registrationTextView: SC.LabelView.design ({
