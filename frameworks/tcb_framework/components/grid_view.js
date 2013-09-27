@@ -17,18 +17,16 @@
 TCB.GridView = SC.GridView.extend(
 /** @scope SC.View.prototype */ {
 
-  /**
-    Override the native SC.GridView.
-    We dont want the contentIndexesInRect to return a value
-    based on the views height.
-    
-    Rather, we ignore this optimization and load all objects to our
-    grid.  Our content will not be too heavy.  Plus, this fixes the
-    odd behaviour of the grid not rendering its content in a sane order.
-  */
-  contentIndexesInRect: function (rect) {
-    
-  }
+    /**
+        Override the native SC.GridView.
+        We dont want the contentIndexesInRect to return a value
+        based on the views height.
 
+        Rather, we ignore this optimization and load all objects to our
+        grid.  Our content will not be too heavy.  Plus, this fixes the
+        odd behaviour of the grid not rendering its content in a sane order.
+    */
+    contentIndexesInRect: function (rect) {
 
+    }
 });

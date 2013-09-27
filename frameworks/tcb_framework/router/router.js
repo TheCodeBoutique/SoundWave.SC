@@ -14,7 +14,6 @@ TCB.Router = SC.Object.create ({
     /**
         Walks like a duck. 
     */
-    
     isRouter: YES,
     
     /**
@@ -26,7 +25,7 @@ TCB.Router = SC.Object.create ({
     route: null,
     
     /**
-        Sets the browsers url hash and push 
+        Sets the browsers url hash and push
         it onto the window.history stack.
     */
     _updateBrowserHashLocation: function(urlPath) { 
@@ -48,7 +47,9 @@ TCB.Router = SC.Object.create ({
         Capture the browsers navigation button events.
     */
     _syncStateToRoute: window.onhashchange = function() {
-        TCB.Router.set('route', window.location.hash)
+        SC.RunLoop.begin();
+            TCB.Router.set('route', window.location.hash);
+        SC.RunLoop.end();
     }
     
 });

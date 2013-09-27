@@ -4,7 +4,7 @@
 *  ==========================================================================
 */
 
-/* core-input */ 
+/* core-input */
 .core-input::-webkit-input-placeholder {
     color:  rgba(177, 177, 177, 0.65);
 }

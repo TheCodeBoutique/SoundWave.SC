@@ -1,13 +1,12 @@
 // ==========================================================================
-// Project:   Soundwave.applicationController
+// Project:   Soundwave.dashboardController
 // Copyright: @2013 My Company, Inc.
 // ==========================================================================
 /*globals Soundwave */
 
-Soundwave.applicationController = SC.Object.create( 
-/** @scope Soundwave.applicationController.prototype */ {
+Soundwave.dashboardController = SC.Object.create(
+/** @scope Soundwave.dashboardController.prototype */ {
 
-        baseView: null,
-        mainContainer: null
+      mainContainer: null
 
-});
+}) ;

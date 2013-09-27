@@ -1,9 +1,15 @@
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
 .tcb-picker-pane {
-  background: sc_static('images/picker_pane.png');
-  background-repeat: no-repeat; 
-  z-index: 100;
+    background: sc_static('images/picker_pane.png');
+    background-repeat: no-repeat;
+    z-index: 100;
 }
 
 .sc-pane.sc-panel > .sc-view.tcb-picker-pane-contentview {
-  border-radius: 10px;
+    border-radius: 10px;
 }

@@ -1,4 +1,10 @@
-.sc-view.sw-signup-registration-view {
+/* ==========================================================================
+*  Project:   SoundwaveTheme Theme Styles
+*  Copyright: @2013 The Code Boutique, LLC.
+*  ==========================================================================
+*/
+
+.sc-view.sw-registration-base-view {
     border-radius: 6px;
     border: solid;
     border-width: 1px;
@@ -10,16 +16,33 @@
     background: -o-linear-gradient(top,  rgba(242,241,241,1) 6%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top,  rgba(242,241,241,1) 6%,rgba(237,237,237,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(242,241,241,1) 6%,rgba(237,237,237,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f1f1', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */ 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f1f1', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 
-.sw-signup-submit-button {
-	float: right;
-	top: 310px;
-	margin-right: 10px;
+.sw-registration-submit-button {
+    float: right;
+    top: 270px;
+    margin-right: 40px;
 }
 
-.sw-signup-cancel-button {
-	margin-left: 370px;
-	top: 310px;
+.sw-registration-cancel-button {
+    margin-left: 340px;
+    top: 270px;
+}
+
+.sc-label-view.sw-registration-header-view {
+    font-size: 22px;
+    color: #969595;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sw-registration-form-input {
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.sw-registration-form-input-left-column {
+    margin-left: 43px;
 }

@@ -4,8 +4,8 @@
 *  ==========================================================================
 */
 
-.fb_iframe_widget {
-    position: absolute !important;
-    bottom: 0px !important;
-    height: 25px !important;
+.sc-label-view.sw-profile-text  {
+    font-size: 72px;
+    color: #969595;
+    margin-bottom: 8px;
 }

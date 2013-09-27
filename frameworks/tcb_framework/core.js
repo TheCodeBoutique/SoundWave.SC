@@ -11,7 +11,7 @@
 TCB = SC.Object.create(
   /** @scope TCB.prototype */ {
 
-  NAMESPACE: 'TCB',
-  VERSION: '0.1.0',
+    NAMESPACE: 'TCB',
+    VERSION: '0.1.0'
 
-}) ;
+});

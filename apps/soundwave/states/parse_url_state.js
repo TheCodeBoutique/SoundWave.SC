@@ -6,14 +6,14 @@
 
 Soundwave.ParseURLState = SC.State.extend ({
   
-  enterState: function() {
-    TCB.Color.colorLog('Enter Parse URL State', TCB.Color.Warn);
-    TCB.Router.set('route', window.location.hash) ; 
-  },
+      enterState: function() {
+        TCB.Color.colorLog('Enter Parse URL State', TCB.Color.Warn);
+        TCB.Router.set('route', window.location.hash) ;
+      },
 
-  exitState: function() {
-    TCB.Color.colorLog('Leaving Parse URL State', TCB.Color.Warn); 
-  }
+      exitState: function() {
+        TCB.Color.colorLog('Leaving Parse URL State', TCB.Color.Warn);
+      }
 
 });
 

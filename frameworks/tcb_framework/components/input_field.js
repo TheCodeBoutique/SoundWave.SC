@@ -17,5 +17,5 @@ TCB.InputField = SC.TextFieldView.extend ({
     bottomBorder: SC.ImageView.design ({
         layout: { bottom: -3, left: 0, right: 0, height: 3 },
         value: sc_static('/images/input_field_bottom_border.png')
-    }),
+    })
 });
