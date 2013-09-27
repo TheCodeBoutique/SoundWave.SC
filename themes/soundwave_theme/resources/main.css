@@ -7,7 +7,7 @@
 body {
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 100;
-    letter-spacing: 0.1em;
+    letter-spacing: 1px;
     background-color: #ededed;
 }
 

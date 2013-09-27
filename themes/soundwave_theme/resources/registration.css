@@ -35,6 +35,13 @@
     color: #969595;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 70px;
+}
+
+.sw-registration-app-icon {
+    margin-bottom: 15px
 }
 
 .sw-registration-form-input {

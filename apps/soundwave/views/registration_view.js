@@ -13,17 +13,23 @@ Soundwave.registrationView = SC.View.create({
             transitionIn: SC.View.SCALE,
             transitionInOptions: { direction: 'up', delay: 0.0, duration: 0.3 },
             classNames: ['sw-registration-base-view'],
-            layout: { centerX: 0, centerY: 0, height: 310, width: 600 },
+            layout: { centerX: 0, centerY: 0, height: 312, width: 600 },
             childViews: ['formsView', 'cancelButton', 'submitButton'],
 
             formsView: SC.View.design({
                 layout: { top: 0, right: 0, bottom: 50, left: 0 },
-                childViews: ['headerView', 'firstNameInputView', 'lastNameInputView', 'userNameInputView', 'emailInputView', 'passwordInputView', 'passwordConfirmationInputView', 'zipCodeInputView'],
+                childViews: ['headerView', 'iOSIconView', 'firstNameInputView', 'lastNameInputView', 'userNameInputView', 'emailInputView', 'passwordInputView', 'passwordConfirmationInputView', 'zipCodeInputView'],
 
                 headerView: SC.LabelView.design ({
                     classNames: ['sw-registration-header-view'],
                     useStaticLayout: YES,
                     value: 'Create your new soundwave.io account'
+                }),
+
+                iOSIconView: SC.ImageView.design ({
+                    layout: { left: 70, top: 10, width: 47, height: 46 },
+                    classNames: ['sw-registration-app-icon'],
+                    value: sc_static('/images/iOS_icon.png')
                 }),
 
                 firstNameInputView: TCB.InputField.design ({
@@ -90,7 +96,7 @@ Soundwave.registrationView = SC.View.create({
             }),
 
             submitButton: SC.ButtonView.design(TCB.ReturnKeyDelegate, {
-                classNames: ['core-button', 'core-white-button', 'sw-registration-submit-button'],
+                classNames: ['core-button', 'core-blue-button', 'sw-registration-submit-button'],
                 useStaticLayout: YES,
                 tagName: "button",
                 title: 'Submit',

@@ -7,7 +7,7 @@
 TCB.InputField = SC.TextFieldView.extend ({
     layout: { height: 30, width: 230 },
     classNames: ['tcb-input-field'],
-    childViews: [/*'topBorder' /*, 'bottomBorder'*/],
+    childViews: ['topBorder', 'bottomBorder'],
     
     topBorder: SC.ImageView.design ({
         layout: { top: 0, left: 0, right: 0, height: 3 },
