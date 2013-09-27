@@ -13,6 +13,7 @@ Soundwave.DashboardState = SC.State.extend({
         },
 
         exitState: function() {
+            Soundwave.applicationController.set('mainContainer', null);
         }
 
 });
